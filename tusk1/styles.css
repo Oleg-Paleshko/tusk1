@@ -1,0 +1,43 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+header {
+    color: rgb(37, 228, 171);
+    letter-spacing: 10px;
+    font-family: fantasy;
+}
+
+.bodyStyle {
+	background: #000 url(./res/ocean.jpg); 
+	color: rgb(127, 224, 179); 
+	background-attachment: fixed; 
+	background-repeat: repeat-x; 
+    background-size: 100%;
+}
+
+.classIframeHeader{
+    text-align: center;
+    border-style: none; 
+    height: 200px;
+    width: 400px;
+    padding: 10px;
+}
+
+.classIframeMenu{
+    text-align: center;
+    border-style: none; 
+    height: 150px;
+    width: 200px;
+}
+
+.classmenu {
+    position: fixed;
+    top: 70%;
+}
+
+footer {
+    
+    position: fixed;
+    top: 85%;
+}
