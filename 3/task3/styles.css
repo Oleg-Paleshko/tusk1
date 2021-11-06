@@ -1,0 +1,51 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+.stuff {
+    height: 400px;
+    width: 300px;
+    margin: 40px;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+header {
+    color: rgb(37, 228, 171);
+    letter-spacing: 10px;
+    font-family: fantasy;
+}
+
+.bodyStyle {
+	background: #000 url(./res/ocean.jpg); 
+	color: rgb(127, 224, 179); 
+	background-attachment: fixed; 
+	background-repeat: repeat-x; 
+    background-size:cover;
+    
+}
+
+.classIframeHeader{
+    text-align: center;
+    border-style: none; 
+    height: 100px;
+    width: 400px;
+}
+
+.classIframeMenu{
+    text-align: center;
+    border-style: none; 
+    height: 150px;
+    width: 200px;
+}
+
+.classIframefooter{
+    text-align: center;
+    border-style: none; 
+    height: 150px;
+    width: 200px;
+}
+
+.classmenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
