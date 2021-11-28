@@ -1,0 +1,49 @@
+nav {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "one two three";
+  border: 1px solid black;
+  background: rgba(128, 128, 128, 0.445);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: one;
+  text-align: center;
+}
+
+.two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+  text-align: center;
+}
+
+.three {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: three;
+  text-align: center;
+}
+
+li {
+  float: left;
+  list-style: none;
+}
+
+a {
+  color: orange;
+  display: block;
+  height: 29px;
+  padding: 0 30px;
+  text-decoration: none;
+  line-height: 29px;
+}
+
+a:hover {
+  background: rgba(128, 0, 128, 0.479);
+}
+/*# sourceMappingURL=scssStyleMenue.css.map */

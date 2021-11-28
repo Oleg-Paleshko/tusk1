@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    .mixed_param_margin_px()
+}
+
+// 
+
+@blue_color: rgb(37, 228, 171);
+
+@header_height: 100px;
+@header_width: 400px;
+
+.mixed_param_margin_px(@n:5)
+{
+    margin: @n * 1px;
+}
+
+.mixed_from_menu_futter()
+{
+    text-align: center;
+    border-style: none; 
+    height: 150px;
+    width: 200px;
+}
+
+.mixed_from_header()
+{
+    text-align: center;
+    border-style: none; 
+}
+
+.func_return_width_mathFunc(@x)
+{
+    width: percentage(@x);
+}
+
+// 
+
+body {
+    overflow: auto; background-color: green;
+}
+
+.div_header {
+    text-align: center;
+}
+
+header {
+    color: @blue_color;
+    letter-spacing: 10px;
+    font-family: fantasy;
+}
+
+.bodyStyle {
+	background: #000 url(./res/ocean.jpg); 
+	color: @blue_color; 
+	background-attachment: fixed; 
+	background-repeat: repeat-x; 
+    background-size:cover;
+    
+}
+
+.classIframeHeader{
+    .mixed_from_header();
+    height: @header_height;
+    width: @header_width;
+}
+
+.classIframeMenu{
+    .mixed_from_menu_futter;
+}
+
+// parametryze mixen wisout parametr
+.classIframefooter{
+    .classIframeMenu;
+}
+
+.classmenu {
+    position: fixed;
+    top: 0;
+    // width: 100%;
+    .func_return_width_mathFunc(1.0);
+}

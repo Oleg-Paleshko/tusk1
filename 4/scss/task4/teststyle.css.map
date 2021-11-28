@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,mBAAmB,EACnB,kCAES;EACT,MAAM,EAAE,KAAK;EACb,kBAAkB,EAAE,aAAa;EACjC,qBAAqB,EAAE,GAAG;CAC7B;;AAED,AAAA,OAAO,CAAC;EACJ,SAAS,EAAE,OAAO;CACrB;;AACD,AAAA,QAAQ,CAAC;EACL,SAAS,EAAE,QAAQ;CACtB;;AACD,AAAA,OAAO,CAAC;EACJ,SAAS,EAAE,MAAM;CACpB",
+    "sources": [
+        "teststyle.scss"
+    ],
+    "names": [],
+    "file": "teststyle.css"
+}

@@ -1,0 +1,16 @@
+.content_block {
+  width: 50%;
+  height: 400px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.content_block h2 {
+  text-align: left;
+  color: #0f0d0d;
+  background-color: rgba(0, 0, 0, 0.39);
+  padding: 1em;
+  width: 100%;
+  margin: auto 0;
+}
+/*# sourceMappingURL=authorStyleContent.css.map */

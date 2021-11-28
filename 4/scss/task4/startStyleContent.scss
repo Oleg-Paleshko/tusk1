@@ -1,0 +1,74 @@
+@mixin mixed_param_margin_px($n)
+{
+    margin: $n * 1px;
+}
+
+$news_stuff_height: 400px;
+$news_stuff_width: 300px;
+
+$gif_p: #000 url(./res/World_ocean_map.gif);
+$gif_box: 400px;
+
+$stuff_news_color: rgba(0, 0, 0, 0.493);
+
+$text_centr: center;
+
+@mixin mix_bg_color {
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+.stuff {
+    height: $news_stuff_height;
+    width: $news_stuff_width;
+    @include mixed_param_margin_px(40);
+    @include mix_bg_color;
+    overflow: scroll; 
+    overflow-x: hidden;
+}
+
+.content_div {
+    float: left;
+    h2{
+        padding: 1em; 
+        width: 900px;
+        height: 400px;
+        display: table-cell; vertical-align: middle;
+    }
+}
+
+.content_text {
+    text-align: left; 
+    color: rgb(15, 13, 13); 
+    @include mix_bg_color;
+    padding: 1em;
+}
+
+.div_gif_window {
+    float: right;
+    h3{
+        color: rgb(42, 34, 68);
+    }
+}
+
+.stuff_info {
+    color: black; 
+    text-align: $text_centr; 
+    background-color: rgba(255, 255, 255, 0.445);
+}
+
+.stuff_news {
+    div{
+        padding: 5px 20px; 
+        background-color: $stuff_news_color;
+        a{
+            text-align: $text_centr;
+        }
+    }
+}
+
+.divGifPict {
+    background: $gif_p;
+    width: $gif_box;
+    height: $gif_box;
+    background-size: 100%;
+}

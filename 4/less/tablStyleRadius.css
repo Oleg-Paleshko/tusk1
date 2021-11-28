@@ -1,0 +1,14 @@
+.table {
+  background-color: rgba(0, 0, 0, 0.349);
+  border-color: black;
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+.table td {
+  text-indent: 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  border: 0px solid #000000;
+}

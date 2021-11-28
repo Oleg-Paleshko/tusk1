@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,SAAS,CAAC;EACN,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;CACjB;;AAED,AAAA,WAAW,CAAC;EACR,gBAAgB,EAAE,oBAAoB;EACtC,KAAK,EAAE,KAAK;EAAE,OAAO,EAAE,GAAG;CAC7B",
+    "sources": [
+        "tablStyleContent.scss"
+    ],
+    "names": [],
+    "file": "tablStyleContent.css"
+}

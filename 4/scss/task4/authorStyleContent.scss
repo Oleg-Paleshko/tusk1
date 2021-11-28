@@ -1,0 +1,15 @@
+@mixin func_return_width_mathFunc($x)
+{
+    width: percentage($x);
+}
+
+.content_block {
+    @include func_return_width_mathFunc(0.5);
+    height: 400px;
+    display: table-cell; vertical-align: middle;
+    h2{
+        text-align: left; color: rgb(15, 13, 13);background-color: rgba(0, 0, 0, 0.39); padding: 1em; 
+        @include func_return_width_mathFunc(1.0);
+        margin: auto 0;
+    }
+}

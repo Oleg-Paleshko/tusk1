@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,gBAAgB,EAAE,oBAAoB;EACtC,YAAY,EAAE,KAAK;EACnB,eAAe,EAAE,QAAQ;EACzB,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,MAAM;CAMrB;;AAXD,AAMI,MANE,CAMF,EAAE,CAAC;EACC,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,iBAAiB;CACzB",
+    "sources": [
+        "tablStyleStart.scss"
+    ],
+    "names": [],
+    "file": "tablStyleStart.css"
+}

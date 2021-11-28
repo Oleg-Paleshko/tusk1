@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 5px;
+}
+
+// 
+
+$blue_color: rgb(37, 228, 171);
+
+$header_height: 100px;
+$header_width: 400px;
+
+@mixin mixed_param_px($n)
+{
+    margin: $n * 1px;
+}
+
+@mixin mixed_from_menu_futter($h)
+{
+    text-align: center;
+    border-style: none; 
+    height: $h * 1px;
+    width: 200px;
+}
+
+@mixin mixed_from_header()
+{
+    text-align: center;
+    border-style: none; 
+}
+
+@function func_return_width_mathFunc($x)
+{
+    $value: $x;
+    @if($x > 1)
+    {
+        @if($x == 1)
+        {
+            @return $value * 1%;
+        }
+    @return 100 * 1%;
+    }
+
+    @if($x < 1)
+    {
+        @return percentage($x);
+    }
+
+    
+
+    
+}
+
+// 
+
+body {
+    overflow: auto; background-color: green;
+}
+
+.div_header {
+    text-align: center;
+}
+
+header {
+    color: $blue_color;
+    letter-spacing: 10px;
+    font-family: fantasy;
+}
+
+.bodyStyle {
+	background: #000 url(./res/ocean.jpg); 
+	color: $blue_color; 
+	background-attachment: fixed; 
+	background-repeat: repeat-x; 
+    background-size:cover;
+    
+}
+
+.classIframeHeader{
+    @include mixed_from_header();
+    height: $header_height;
+    width: $header_width;
+}
+
+.classIframeMenu{
+    @include mixed_from_menu_futter(150);
+}
+
+// parametryze mixen wisout parametr
+.classIframefooter{
+    @include mixed_from_menu_futter(150);
+}
+
+.classmenu {
+    position: fixed;
+    top: 0;
+    // width: 100%;
+    width: func_return_width_mathFunc(1.0);
+}
