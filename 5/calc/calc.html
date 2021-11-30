@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="div_value input_div">
+            <form name="form" class="form_input">
+                <input type="text" name="textview" id="id_inp" class="input" readonly>
+            </form>
+        </div>
+        <div class="div_value clean" onclick="clear_function()">c</div>
+        <div class="div_value back" onclick="last_del()">&larr;</div>
+        <div class="div_value" onclick="write_func('+')">+</div>
+        <div class="div_value" onclick="write_func('-')">-</div>
+        <div class="div_value" onclick="write_func('*')">&times;</div>
+        <div class="div_value" onclick="write_func('/')">&divide;</div>
+        <div class="div_value" onclick="write_func('8')">8</div>
+        <div class="div_value" onclick="write_func('7')">7</div>
+        <div class="div_value" onclick="write_func('9')">9</div>
+        <div class="div_value" onclick="write_func('(')">(</div>
+        <div class="div_value" onclick="write_func('4')">4</div>
+        <div class="div_value" onclick="write_func('5')">5</div>
+        <div class="div_value" onclick="write_func('6')">6</div>
+        <div class="div_value" onclick="write_func(')')">)</div>
+        <div class="div_value" onclick="write_func('1')">1</div>
+        <div class="div_value" onclick="write_func('2')">2</div>
+        <div class="div_value" onclick="write_func('3')">3</div>
+        <div class="div_value equal" id="id_eql" onclick="result_function_check()">=</div>
+        <div class="div_value zero" onclick="write_func('0')">0</div>
+        <div class="div_value" id="dote" onclick="write_func('.')">.</div>
+        <div class="radio_big">
+            <input type="radio" name="r1" checked onclick="fun_radb()">вещественные</input>
+        </div>
+        <div class="radio_small">
+            <input type="radio" name="r1" onclick="fun_radb()">целые</input>
+        </div>
+        <div>
+            <form class="form_select">
+                <select name="s1" id="s1" class="select">
+                    <option value="potionPriority" selected>приоритет</option>
+                    <option value="potionDontPriority">без приоритета</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <div>
+        <input type="button" name="message" value="отправить" onclick="mesage()">
+        <input type="button" name="info_aler" value="просмотреть действия" onclick="alert_f()">
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
