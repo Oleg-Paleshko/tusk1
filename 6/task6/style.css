@@ -1,0 +1,27 @@
+body {
+    background-color: greenyellow;
+    user-select: none;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px; */
+    background-color: rgba(0, 0, 0, 0.644);
+    padding: 4px;
+
+    border-radius: 5px;
+    max-width: 1000px;
+}
+
+.div_up {
+    background-color: rgb(111, 0, 255);
+    text-align: center;
+    cursor: pointer;
+}
+
+.div_menu {
+    background-color: green;
+    cursor: pointer;
+}

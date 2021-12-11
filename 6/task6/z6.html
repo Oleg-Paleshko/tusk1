@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="div_up">
+            <div>
+                стандарт:
+            </div>
+            <div>
+                <select name="s1" id="s1" class="select">
+                    <option value="potionPriority" selected>тесто тонкое(0)</option>
+                    <option value="potionDontPriority">тесто толстое(0)</option>
+                    <option value="potionDontPriority">тесто слоёное(0)</option>
+                </select>
+                 - 
+                 <select name="s1" id="s2" class="select">
+                    <option value="potionPriority" selected>кетчуп(0)</option>
+                    <option value="potionDontPriority">майонез(0)</option>
+                </select>
+                 - 
+                 <select name="s1" id="s3" class="select">
+                    <option value="potionPriority" selected>гарчица(0)</option>
+                    <option value="potionDontPriority">ананас(0)</option>
+                </select>
+                 - 
+                 <select name="s1" id="s4" class="select">
+                    <option value="potionPriority" selected>ветчина(0)</option>
+                    <option value="potionDontPriority">мясо(0)</option>
+                </select>
+                ;(40)(калории 1000)
+            </div>
+        </div>
+        <div class="div_menu">
+            <span>соленые огурцы</span>
+        </div>
+        <div class="div_menu">
+            <div class="radio_big">
+                <input type="radio" name="r1" checked onchange="fun_radb()">снять(0)</input>
+            </div>
+            <div class="radio_small">
+                <input type="radio" name="r1" onchange="fun_radb()">добавить(+15)</input>
+            </div>
+
+            <div><label><input type="checkbox" id="wurst" onchange="wurstf(15, 100)"> колбаса(+15)(калории +100)</label></div>
+            <div><label><input type="checkbox" id="sousage" onchange="sousagef(15, 100)"> сосиски(+15)(калории +100)</label></div>
+            <div><label><input type="checkbox" id="cheez" onchange="cheezf(15, 100)"> сыр(+15)(калории +100)</label></div>
+            <div><label><input type="checkbox" id="wegetables" onchange="wegetablesf(15, 100)"> овощи(+15)(калории +100)</label></div>
+            <div><label><input type="checkbox" id="oliv" onchange="olivf(10, 100)"> оливки(+10)(калории +100)</label></div>
+
+            <form class="form_select">
+                <select name="s1" id="s5" class="select">
+                    <option value="potionPriority" selected>маслины(0)</option>
+                    <option value="potionDontPriority">помидоры(0)</option>
+                </select>
+            </form>
+        </div>
+        <label>
+            цена 
+        </label>
+        <label id="pris">
+            40
+        </label>
+        <label>
+            калории
+        </label>
+        <label id="fat">
+            1000
+        </label>
+    </div>
+    <div>
+        <input type="button" name="message" value="стандарт" onclick="mesagestandart()">
+        <input type="button" name="info_aler" value="измененная" onclick="mesage()">
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
