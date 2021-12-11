@@ -42,8 +42,8 @@ class newpizza extends pizza{
 let count = 40;
 let calories = 1000;
 
-let k1 = 1100;
-let k2 = 1400;
+let k1 = 50;
+let k2 = 70;
 
 function wurstf(n, m) {
     var chbox;
@@ -167,17 +167,17 @@ async function mesagestandart(event) {
         let countere = 40;
         let calori = 1000;
 
-        if(calori < k1)
+        if(countere < k1)
         {
-            calori = calori + (calori / 100) * 20;
+            countere = countere + (countere / 100) * 20;
         }
-        else if(calori < k2)
+        else if(countere < k2)
         {
-            calori = calori + (calori / 100) * 15;
+            countere = countere + (countere / 100) * 15;
         }
         else
         {
-            calori = calori + (calori / 100) * 10;
+            countere = countere + (countere / 100) * 10;
         }
 
         let idselec = document.getElementById('s1');
@@ -267,17 +267,17 @@ async function mesage(event) {
         let countere = count;
         let calori = calories;
 
-        if(calori < k1)
+        if(countere < k1)
         {
-            calori = calori + (calori / 100) * 20;
+            countere = countere + (countere / 100) * 20;
         }
-        else if(calori < k2)
+        else if(countere < k2)
         {
-            calori = calori + (calori / 100) * 15;
+            countere = countere + (countere / 100) * 15;
         }
         else
         {
-            calori = calori + (calori / 100) * 10;
+            countere = countere + (countere / 100) * 10;
         }
 
         let idselec = document.getElementById('s1');
