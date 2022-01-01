@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Circle {
+            R = 0;
+
+            getRadians(degrees) {
+                return (Math.PI / 180) * degrees;
+            }
+
+            circleDraw() {
+                let canvas = document.querySelector('canvas');
+                let ctx = canvas.getContext('2d');
+                ctx.beginPath();
+                ctx.arc(100, 250, 50, 0, Math.PI * 2);
+                ctx.fillStyle = 'blue';
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                ctx.beginPath();
+                ctx.arc(300, 250, 50, 0, Math.PI * 2);
+                ctx.fillStyle = 'blue';
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+
+                // 
+
+                ctx.beginPath();
+                ctx.moveTo(100, 250);
+                ctx.lineTo(200, 250);
+                ctx.lineTo(250, 200);
+                ctx.lineTo(150, 200);
+                ctx.lineTo(100, 250);
+                ctx.closePath();
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(300, 250);
+                ctx.lineTo(250, 200);
+                ctx.lineTo(230, 180);
+                ctx.closePath();
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(200, 170);
+                ctx.lineTo(230, 180);
+                ctx.lineTo(260, 170);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(200, 250);
+                ctx.lineTo(150, 200);
+                ctx.lineTo(140, 190);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(130, 190);
+                ctx.lineTo(140, 190);
+                ctx.lineTo(150, 190);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(200, 250, 10, 0, Math.PI*2);
+                ctx.stroke();
+            }
+
+        }
+
+    </script>
+    <canvas width="400" height="400" style="background: #cacaca;"></canvas>
+    <input type="button" onclick="Draw()" value="Draw!">
+    <input type="button" onclick="Clear()" value="Clear!">
+    <div id="info" width="600" height="200" style="background: #cacaca;"></div>
+    <script>
+
+        function Draw() {
+            let circle = new Circle;
+            circle.circleDraw();
+        }
+
+        function Clear() {
+            let canvas = document.querySelector('canvas');
+            let ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, 400, 400);
+        }
+    </script>
+</body>
+
+</html>

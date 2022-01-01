@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Circle {
+            R = 0;
+
+            getRadians(degrees) {
+                return (Math.PI / 180) * degrees;
+            }
+
+            circleDraw() {
+                let canvas = document.querySelector('canvas');
+                let ctx = canvas.getContext('2d');
+                ctx.arc(100, 100, 100, 0, Math.PI * 2);
+                ctx.stroke();
+                ctx.closePath();
+
+                ctx.beginPath();
+                ctx.moveTo(100, 100);
+                ctx.lineTo(90, 110);
+                ctx.lineTo(100, 110);
+                ctx.strokeStyle = "red";
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(50, 140);
+                ctx.quadraticCurveTo(100, 100, 150, 140)
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(50, 140);
+                ctx.quadraticCurveTo(100, 200, 150, 140)
+                ctx.stroke();
+
+                // 
+
+                ctx.beginPath();
+                ctx.moveTo(50, 90);
+                ctx.quadraticCurveTo(70, 50, 90, 90)
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(50, 90);
+                ctx.quadraticCurveTo(70, 110, 90, 90)
+                ctx.stroke();
+
+                // 
+
+                ctx.beginPath();
+                ctx.moveTo(110, 90);
+                ctx.quadraticCurveTo(130, 50, 150, 90)
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(110, 90);
+                ctx.quadraticCurveTo(130, 110, 150, 90)
+                ctx.stroke();
+
+                // 
+
+                ctx.beginPath();
+                ctx.moveTo(110, 90);
+                ctx.quadraticCurveTo(130, 110, 150, 90)
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(110, 90);
+                ctx.quadraticCurveTo(130, 110, 150, 90)
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.strokeStyle = 'green';
+                // ctx.moveTo(100, 75);
+                ctx.arc(100, 100, 100, (Math.PI / 180) * (320), (Math.PI / 180) * (220), true);
+                ctx.fill();
+                ctx.closePath();
+                ctx.stroke();
+            }
+
+        }
+
+    </script>
+    <canvas width="200" height="200" style="background: #cacaca;"></canvas>
+    <input type="button" onclick="Draw()" value="Draw!">
+    <input type="button" onclick="Clear()" value="Clear!">
+    <div id="info" width="600" height="200" style="background: #cacaca;"></div>
+    <script>
+
+        function Draw() {
+            let circle = new Circle;
+            circle.circleDraw();
+        }
+
+        function Clear() {
+            let canvas = document.querySelector('canvas');
+            let ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0, 200, 200);
+        }
+    </script>
+</body>
+
+</html>
