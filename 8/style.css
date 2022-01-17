@@ -1,0 +1,27 @@
+#text {
+    width: 500px;
+    height: 30px;
+}
+#bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#list {
+    flex-direction: row;
+    justify-content: center;
+}
+.label-size {
+    font-size: 30px;
+}
+.checkbox-size {
+    width: 100px;
+    height: 100px;
+}
+ 
+#todo {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+ 
+}
